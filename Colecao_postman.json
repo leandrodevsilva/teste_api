@@ -1,0 +1,66 @@
+{
+    "info": {
+      "_postman_id": "a1b2c3d4-e5f6-7890-f1e2-d3c4b5a6978",
+      "name": "Busca Operadoras Saúde",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Buscar Operadoras por Nome",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:5000/buscar_operadoras?termo=Amil&limite=5",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["buscar_operadoras"],
+            "query": [
+              { "key": "termo", "value": "Amil" },
+              { "key": "limite", "value": "5" }
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Buscar Operadoras por Cidade",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:5000/buscar_operadoras?termo=São Paulo&limite=10",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["buscar_operadoras"],
+            "query": [
+              { "key": "termo", "value": "São Paulo" },
+              { "key": "limite", "value": "10" }
+            ]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Buscar Operadoras por UF",
+        "request": {
+          "method": "GET",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:5000/buscar_operadoras?termo=MG&limite=8",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["buscar_operadoras"],
+            "query": [
+              { "key": "termo", "value": "MG" },
+              { "key": "limite", "value": "8" }
+            ]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
